@@ -1,34 +1,40 @@
 <template>
   <MainHeader/>
   <div class="content">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainProfile></MainProfile>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainProfile from './components/MainProfile.vue'
 import MainHeader from './components/MainHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    MainProfile,
     MainHeader
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-.content {
-  padding-top: 60px;
+* {
+  color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+
 }
 </style>
