@@ -19,9 +19,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .captionboxcontent {
-    border: 1px solid rgb(7, 126, 52);
+    border: 3px solid $tertiary-color;
     border-radius: 15px;
     text-align: center;
     font-size: 1rem;
@@ -29,11 +29,8 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(7, 126, 52, 25%);
-}
-
-a {
-    color: black;
+    background-color: $primary-color;
+    background-blend-mode: lighten;
 }
 
 .captionbox {
@@ -41,11 +38,8 @@ a {
     text-align: left;
     display: flex;
     flex-direction: column;
-    color: rgb(7, 126, 52);
     font-weight: bold;
-}
-
-.captionbox:hover {
     font-size: .8rem;
+    color: $tertiary-color;
 }
 </style>

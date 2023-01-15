@@ -5,7 +5,7 @@
             <a href="/Websites">Websites</a>
         </CaptionBox>
 
-        <button>Get in touch</button>
+        <button>GET IN TOUCH</button>
 
         <CaptionBox caption="Hobby">
             <a href="/modeling" >3D Modeling</a>
@@ -25,18 +25,27 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 button {
-    background-color: rgb(7, 126, 52);
+    background-color: $primary-color; 
+    border-radius: 15px;
     border: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
+    box-shadow: #00000052 0px 0px 20px 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    background-color: white;
 }
 </style>
