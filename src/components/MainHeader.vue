@@ -28,10 +28,14 @@ export default {
 <style lang="scss">
 button {
     background-color: $primary-color; 
-    border-radius: 15px;
+    border-radius: 3px;
     border: none;
     font-size: 1rem;
     font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    color: $quad-color;
+    height: 50px;
 }
 
 .header {
@@ -43,9 +47,9 @@ button {
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
-    box-shadow: #00000052 0px 0px 20px 20px;
     padding-bottom: 10px;
     padding-top: 5px;
-    background-color: white;
+    background-color: $quad-color;
+    align-items: center;
 }
 </style>

@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss">
 .captionboxcontent {
-    border: 3px solid $tertiary-color;
+    border: 1px solid $tertiary-color;
     border-radius: 15px;
     text-align: center;
     font-size: 1rem;
@@ -29,8 +29,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $primary-color;
-    background-blend-mode: lighten;
+    background-color: $tertiary-color;
 }
 
 .captionbox {
