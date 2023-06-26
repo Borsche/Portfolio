@@ -2,12 +2,13 @@
     <div class="header">
         <CaptionBox caption="Profession">
             <a href="/Software">Software</a>
+            <a href="/Software">Games</a>
             <a href="/Websites">Websites</a>
         </CaptionBox>
 
         <button>GET IN TOUCH</button>
 
-        <CaptionBox caption="Hobby">
+        <CaptionBox caption="Hobby" class="hobby">
             <a href="/modeling" >3D Modeling</a>
             <a href="/modeling" >Photography</a>
         </CaptionBox>
@@ -36,20 +37,38 @@ button {
     padding: 5px;
     color: $quad-color;
     height: 50px;
+    display: none;
 }
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
+    width: 100vw;
+    background-color: $quad-color;
     padding-bottom: 10px;
     padding-top: 5px;
-    background-color: $quad-color;
-    align-items: center;
+}
+
+.hobby {
+    display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    button {
+        display: block;
+    }
+
+    .header {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .hobby {
+        display: block;
+    }
 }
 </style>

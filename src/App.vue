@@ -24,6 +24,7 @@ export default {
 <style lang="scss">
 
 .content {
+  scroll-snap-type: y mandatory;
 }
 
 #app {
@@ -43,6 +44,9 @@ export default {
 body {
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
 
 a {
   text-decoration: none;

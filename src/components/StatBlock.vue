@@ -23,10 +23,11 @@ export default {
 
 <style lang="scss">
 .statblock {
+    scroll-snap-align: start;
 
     .stat {
         color: $primary-color;
-        font-size: 8rem;
+        font-size: 3rem;
         font-weight: bold;
     }
 
@@ -35,4 +36,19 @@ export default {
         font-size: 2rem;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .statblock {
+
+        .stat {
+            font-size: 8rem;
+        }
+
+        .desc {
+            color: $tertiary-color;
+            font-size: 2rem;
+        }
+    }
+}
+
 </style>

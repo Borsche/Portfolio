@@ -4,7 +4,7 @@
             <span>Welcome,</span><br>
             <span class="plus">my name is <span class="bold">Blazej Josko</span> and</span><br>
             <span class="big bold">I am a Software Developer<span class="blink">|</span></span><br>
-            <span>Currently I am an Full Stack Developer at OSP</span><br>
+            <span>Currently I am a Full Stack Developer at OSP</span><br>
             <span>Where I develop and maintain Frontend and Backend Services for the Resy Team</span><br>
             <button>Download CV</button><button id="projects">Projects</button>
         </div>
@@ -33,17 +33,18 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    scroll-snap-align: start;
 
     .text {
         text-align: left;
 
         .plus {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .big {
-            font-size: 3rem;
-            line-height: 5rem;
+            font-size: 2rem;
+            line-height: 3rem;
         }
 
         .bold {
@@ -61,15 +62,39 @@ export default {
             color: $secondary-color;
         }
     }
-
+    
     .img {
-        background: url('../assets/Bild.png') no-repeat center;
-        background-size: contain;
-        height: 300*1.4px;
+        background: url('../assets/Bild.jpg') no-repeat center;
+        background-size: cover;
+        height: 300*.8px;
         width: 223*1.4px;
         border: 3px solid $primary-color;
         border-radius: 15px;
     }
-    
+}
+
+@media only screen and (min-width: 1200px) {
+    .mainprofile {
+        .text {
+
+            .plus {
+                font-size: 1.2rem;
+            }
+
+            .big {
+                font-size: 3rem;
+                line-height: 5rem;
+            }
+        }
+
+        .img {
+            background: url('../assets/Bild.jpg') no-repeat center;
+            background-size: cover;
+            height: 300*1.4px;
+            width: 223*1.4px;
+            border: 3px solid $primary-color;
+            border-radius: 15px;
+        }
+    }
 }
 </style>

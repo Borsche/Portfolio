@@ -2,8 +2,9 @@
     <div class="statgraph">
         <div class="stat">{{ stat }}</div>
         <div class="statgraphlimiter">
-            <div class="desc" :style="{width: width+'%'}">{{ desc }}</div>
+            <div class="desc" :style="{width: width+'%'}"></div>
         </div>
+        <div class="desctext">{{ desc }}</div>
     </div>
 </template>
 
@@ -29,10 +30,47 @@ export default {
 
 <style lang="scss">
 .statgraph {
-    width: 1200px;
+    min-width: 50px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    .stat {
+        color: $primary-color;
+        max-width: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .statgraphlimiter {
+        width: 70vw;
+    }
+
+    .desc {
+        color: $secondary-color;
+        font-size: 1rem;
+        background-color: $tertiary-color;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+
+    .desctext {
+        color: $primary-color;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .statgraph {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
     .stat {
         color: $primary-color;
@@ -55,4 +93,6 @@ export default {
         white-space: nowrap;
     }
 }
+}
+
 </style>

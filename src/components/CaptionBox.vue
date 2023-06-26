@@ -25,7 +25,7 @@ export default {
     border-radius: 15px;
     text-align: center;
     font-size: 1rem;
-    height: 50px;
+    padding: 5px 0px 5px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,12 +33,26 @@ export default {
 }
 
 .captionbox {
-    width: 400px;
     text-align: left;
-    display: flex;
     flex-direction: column;
     font-weight: bold;
     font-size: .8rem;
     color: $tertiary-color;
+}
+
+@media only screen and (min-width: 1200px) {
+    .captionboxcontent {
+        height: 50px;
+    }
+
+    .captionbox {
+        width: 400px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: .8rem;
+        color: $tertiary-color;
+    }
 }
 </style>
