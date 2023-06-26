@@ -8,33 +8,27 @@
             <span class="">Experienced in</span> 
             <StatGraph
                 stat="Java"
-                desc="7+ years"
-                width="100"
             />
             <StatGraph
                 stat="C#"
-                desc="7+ years"
-                width="100"
             />
             <StatGraph
                 stat="Unity"
-                desc="5+ years"
-                width="71"
             />  
             <StatGraph
                 stat="Node.js"
-                desc="4+ years"
-                width="57"
+            /> 
+            <StatGraph
+                stat="TypeScript"
+            /> 
+            <StatGraph
+                stat="Javascript"
             /> 
             <StatGraph
                 stat="Vue"
-                desc="2+ years"
-                width="28.5"
             /> 
             <StatGraph
                 stat="GoLang"
-                desc="~1 year"
-                width="14"
             /> 
         </div>
     </div>
@@ -61,7 +55,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    scroll-snap-align: start;
     .statlist {
         display: flex;
         flex-direction: column;

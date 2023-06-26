@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <CaptionBox caption="Profession">
-            <a href="/Software">Software</a>
+            <a href="#softwareCategory">Software</a>
             <a href="/Software">Games</a>
             <a href="/Websites">Websites</a>
         </CaptionBox>
@@ -48,6 +48,7 @@ button {
     background-color: $quad-color;
     padding-bottom: 10px;
     padding-top: 5px;
+    z-index: 10;
 }
 
 .hobby {

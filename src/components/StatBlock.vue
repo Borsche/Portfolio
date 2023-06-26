@@ -23,7 +23,6 @@ export default {
 
 <style lang="scss">
 .statblock {
-    scroll-snap-align: start;
 
     .stat {
         color: $primary-color;

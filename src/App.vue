@@ -3,6 +3,7 @@
   <div class="content">
     <MainProfile></MainProfile>
     <StatProfile></StatProfile>
+    <SoftwareProfile></SoftwareProfile>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import MainProfile from './components/MainProfile.vue'
 import MainHeader from './components/MainHeader.vue'
 import StatProfile from './components/StatProfile.vue'
+import SoftwareProfile from './components/SoftwareProfile.vue'
 
 export default {
   name: 'App',
   components: {
     MainProfile,
     MainHeader,
-    StatProfile
+    StatProfile,
+    SoftwareProfile,
   }
 }
 </script>
@@ -24,7 +27,6 @@ export default {
 <style lang="scss">
 
 .content {
-  scroll-snap-type: y mandatory;
 }
 
 #app {

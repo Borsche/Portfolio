@@ -4,7 +4,6 @@
         <div class="statgraphlimiter">
             <div class="desc" :style="{width: width+'%'}"></div>
         </div>
-        <div class="desctext">{{ desc }}</div>
     </div>
 </template>
 
@@ -52,7 +51,7 @@ export default {
         color: $secondary-color;
         font-size: 1rem;
         background-color: $tertiary-color;
-        height: 20px;
+        height: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -74,7 +73,7 @@ export default {
 
     .stat {
         color: $primary-color;
-        font-size: 8rem;
+        font-size: 7vh;
         font-weight: bold;
     }
 
@@ -86,7 +85,7 @@ export default {
         color: $secondary-color;
         font-size: 2rem;
         background-color: $tertiary-color;
-        height: 60px;
+        height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
