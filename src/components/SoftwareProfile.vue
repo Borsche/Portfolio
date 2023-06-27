@@ -18,7 +18,7 @@
         <ProjectTile
             title="Loyalty Twitch"
             desc="A huge WIP Project. A software which allows the viewers to earn points by watching the stream and playing minigames with others. These points can then be spend on by the streamer defined commands. The old Java Codebase is currently being redone in Node.js."
-            link="https://github.com/Borsche/teamspeak-monitoring-bot"
+            link="https://github.com/Borsche/Loyalty_Backend"
             :tags="['Node.js', 'Typescript', 'PostgreSQL', 'API', 'Twitch', 'Java', 'SpringBoot', 'Vue.js']"
         />
     </div>
@@ -45,6 +45,7 @@ export default {
     align-content: space-around;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 50px;
 
     .category {
         width: 100vw;
