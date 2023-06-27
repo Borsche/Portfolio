@@ -6,12 +6,14 @@
             desc="A bot which reacts to specified commands send through teamspeak to allow for a simple monitoring."
             link="https://github.com/Borsche/teamspeak-monitoring-bot"
             :tags="['Node.js', 'Typescript', 'API', 'Teamspeak3']"
+            :image="require('../assets/projects/Teamspeak.png')"
         />
         <ProjectTile
             title="Twitch Voting Tool"
             desc="A tool for twitch which allows the streamer to set up quick Polls. The viewers can then vote through the chat. Trough customizable shortcuts the Streamer can work more efficiently."
-            link="https://github.com/Borsche/teamspeak-monitoring-bot"
+            link="https://github.com/Borsche/Twitch-VoteCounter"
             :tags="['Node.js', 'Typescript', 'Electron', 'API', 'Twitch']"
+            :image="require('../assets/projects/TwitchVoting.png')"
         />
         <ProjectTile
             title="Loyalty Twitch"
