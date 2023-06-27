@@ -88,6 +88,8 @@ export default {
         width: 100%;
         position: absolute;
         background-position-y: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         z-index: 0;
         filter: blur(6px);
         -webkit-filter: blur(6px);
