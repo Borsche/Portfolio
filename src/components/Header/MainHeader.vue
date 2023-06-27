@@ -6,7 +6,7 @@
             <a href="#Websites">Websites</a>
         </CaptionBox>
 
-        <button>GET IN TOUCH</button>
+        <a class="contact" href="mailto:blazejjosko@hotmail.de">GET IN TOUCH</a>
 
         <CaptionBox caption="Hobby" class="hobby">
             <a href="/modeling" >3D Modeling</a>
@@ -27,19 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-button {
-    background-color: $primary-color; 
-    border-radius: 3px;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 5px;
-    padding: 5px;
-    color: $quad-color;
-    height: 50px;
-    display: none;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -49,27 +36,42 @@ button {
     padding-bottom: 10px;
     padding-top: 5px;
     z-index: 10;
-}
+    
+    .hobby {
+        display: none;
+    }
 
-.hobby {
-    display: none;
+    .contact {
+        background-color: $primary-color; 
+        border-radius: 3px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px;
+        color: $quad-color;
+        height: 50px;
+        display: none;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    button {
-        display: block;
-    }
-
-    .header {
+   .header {
         height: 60px;
         display: flex;
         justify-content: space-evenly;
         font-weight: bold;
         align-items: center;
-    }
 
-    .hobby {
-        display: block;
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hobby {
+            display: none;
+        }
     }
 }
 </style>

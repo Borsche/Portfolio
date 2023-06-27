@@ -6,7 +6,7 @@
             <span class="big bold">I am a Software Developer<span class="blink">|</span></span><br>
             <span>Currently I am a Full Stack Developer at OSP</span><br>
             <span>Where I develop and maintain Frontend and Backend Services for the Resy Team</span><br>
-            <button>Download CV</button><button id="projects">Projects</button>
+            <a class="download" href="../assets/CV2023EnglishBlazejJosko.pdf" download>Download CV</a><a href="https://github.com/Borsche/">My Github Page</a>
         </div>
         <div class="img"></div>
     </div>
@@ -34,6 +34,33 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     scroll-snap-align: start;
+
+    a, .download {
+        background-color: $primary-color; 
+        border-radius: 3px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5px;
+        padding: 5px;
+        color: $quad-color;
+        height: 50px;
+        cursor: pointer;
+        max-width: 150px;
+    }
+    
+    a {
+        background-color: $tertiary-color;
+        color: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .download {
+        display: none;
+    }
 
     .text {
         text-align: left;
