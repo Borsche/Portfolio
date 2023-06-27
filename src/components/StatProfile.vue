@@ -1,8 +1,8 @@
 <template>
     <div class="statprofile">
         <StatBlock
-            stat="6+"
-            desc="years of working experience"
+            stat="5+"
+            desc="years of professional working experience"
         />
         <div class="statlist">
             <span class="">Experienced in</span> 

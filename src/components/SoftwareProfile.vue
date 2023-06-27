@@ -50,16 +50,8 @@ export default {
 }
 
 @media only screen and (min-width: 1200px) {
-    .statblock {
-
-        .stat {
-            font-size: 8rem;
-        }
-
-        .desc {
-            color: $tertiary-color;
-            font-size: 2rem;
-        }
+    .softwareprofile {
+        height: 100vh;
     }
 }
 
