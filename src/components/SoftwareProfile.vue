@@ -1,6 +1,9 @@
 <template>
     <div class="softwareprofile">
         <h1 id="softwareCategory" class="category">Software</h1>
+        <div class="softwareDescContainer">    
+            <span class="softwareDesc">Here is a collection of a few projects which are publically available on my Github Account. All of these projects where done by me. By clicking on a project you can open a description to read more about the project. In addition to that a button will show up which redirects you to the Github Repository.</span>
+        </div>
         <ProjectTile
             title="TS3-Monitoring Bot"
             desc="A bot which reacts to specified commands send through teamspeak to allow for a simple monitoring."
@@ -55,6 +58,23 @@ export default {
     justify-content: space-evenly;
     gap: 50px;
 
+    #softwareCategory {
+        font-size: 3rem;
+        color: $primary-color;
+    }
+
+    .softwareDescContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .softwareDesc {
+            max-width: 800px;
+            word-wrap: normal;
+            display: block;
+        }
+    }
+
     .category {
         width: 100vw;
     }
@@ -63,6 +83,10 @@ export default {
 @media only screen and (min-width: 1200px) {
     .softwareprofile {
         height: 100vh;
+
+        #softwareCategory {
+            font-size: 8rem;
+        }
     }
 }
 
