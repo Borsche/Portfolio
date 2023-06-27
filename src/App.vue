@@ -47,10 +47,15 @@ body {
 }
 
 html {
-  scroll-snap-type: y mandatory;
 }
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
 }
 </style>
