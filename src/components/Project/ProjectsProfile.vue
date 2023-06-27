@@ -1,6 +1,6 @@
 <template>
     <div class="profile">
-        <h1 :id="sectionId" class="category">Software</h1>
+        <h1 :id="sectionId" class="category">{{ sectionId }}</h1>
         <div class="descContainer">    
             <span class="desc">{{ desc }}</span>
         </div>
@@ -36,6 +36,8 @@ export default {
     justify-content: space-evenly;
     gap: 50px;
 
+    padding-top: 50px;
+
     .category {
         font-size: 3rem;
         color: $primary-color;
@@ -58,6 +60,7 @@ export default {
 @media only screen and (min-width: 1200px) {
     .profile {
         height: 100vh;
+        padding-top: 0;
 
         .category {
             font-size: 8rem;

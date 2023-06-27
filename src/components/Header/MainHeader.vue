@@ -1,9 +1,9 @@
 <template>
     <div class="header">
         <CaptionBox caption="Profession">
-            <a href="#softwareCategory">Software</a>
-            <a href="/Software">Games</a>
-            <a href="/Websites">Websites</a>
+            <a href="#Software">Software</a>
+            <a href="#Games">Games</a>
+            <a href="#Websites">Websites</a>
         </CaptionBox>
 
         <button>GET IN TOUCH</button>

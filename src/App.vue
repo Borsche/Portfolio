@@ -4,6 +4,8 @@
     <MainProfile></MainProfile>
     <StatProfile></StatProfile>
     <SoftwareProfile></SoftwareProfile>
+    <GamesProfile></GamesProfile>
+    <WebsitesProfile></WebsitesProfile>
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import MainProfile from '@/views/MainProfile.vue'
 import MainHeader from '@/components/Header/MainHeader.vue'
 import StatProfile from '@/views/StatProfile.vue'
 import SoftwareProfile from '@/views/SoftwareProfile.vue'
+import WebsitesProfile from '@/views/WebsitesProfile.vue'
+import GamesProfile from '@/views/GamesProfile.vue'
 
 export default {
   name: 'App',
@@ -20,6 +24,8 @@ export default {
     MainHeader,
     StatProfile,
     SoftwareProfile,
+    WebsitesProfile,
+    GamesProfile,
   }
 }
 </script>

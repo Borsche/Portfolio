@@ -5,7 +5,7 @@
         <div class="project_content">
             <h1 class="title">{{ title  }}</h1>
             <div class="desc">{{ desc }}</div>
-            <a class="ref" :href="link">VIEW ON GITHUB</a>
+            <a v-if="link" class="ref" :href="link">VIEW ON GITHUB</a>
             <div class="tags">
                 <span
                     class="tag"

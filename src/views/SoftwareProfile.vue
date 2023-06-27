@@ -1,7 +1,7 @@
 <template>
     <ProjectsProfile
-        sectionId="software"
-        desc="Here is a collection of a few projects which are publically available on my Github Account. All of these projects where done by me. By clicking on a project you can open a description to read more about the project. In addition to that a button will show up which redirects you to the Github Repository."
+        sectionId="Software"
+        desc="Here is a collection of a few projects which are publicly available on my Github Account. All of these projects where done by me. By clicking on a project you can open a description to read more about the project. In addition to that a button will show up which redirects you to the Github Repository."
     >
         <ProjectTile
             title="TS3-Monitoring Bot"
