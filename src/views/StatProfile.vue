@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import StatBlock from './StatBlock.vue'
-import StatGraph from './StatGraph.vue'
+import StatBlock from '@/components/Stat/StatBlock.vue'
+import StatGraph from '@/components/Stat/StatGraph.vue'
 
 export default {
     name: 'StatProfile',

@@ -1,9 +1,8 @@
 <template>
-    <div class="softwareprofile">
-        <h1 id="softwareCategory" class="category">Software</h1>
-        <div class="softwareDescContainer">    
-            <span class="softwareDesc">Here is a collection of a few projects which are publically available on my Github Account. All of these projects where done by me. By clicking on a project you can open a description to read more about the project. In addition to that a button will show up which redirects you to the Github Repository.</span>
-        </div>
+    <ProjectsProfile
+        sectionId="software"
+        desc="Here is a collection of a few projects which are publically available on my Github Account. All of these projects where done by me. By clicking on a project you can open a description to read more about the project. In addition to that a button will show up which redirects you to the Github Repository."
+    >
         <ProjectTile
             title="TS3-Monitoring Bot"
             desc="A bot which reacts to specified commands send through teamspeak to allow for a simple monitoring."
@@ -32,16 +31,18 @@
             :tags="['Node.js', 'Javascript', 'API', 'Twitch',]"
             :image="require('../assets/projects/TTS.png')"
         />
-    </div>
+    </ProjectsProfile>
 </template>
 
 <script>
-import ProjectTile from './ProjectTile.vue'
+import ProjectTile from '@/components/Project/ProjectTile.vue'
+import ProjectsProfile from '@/components/Project/ProjectsProfile.vue'
 
 export default {
     name: 'SoftwareProfile',
     components: {
         ProjectTile,
+        ProjectsProfile,
     }
 }
 </script>

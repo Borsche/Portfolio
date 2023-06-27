@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import MainProfile from './components/MainProfile.vue'
-import MainHeader from './components/MainHeader.vue'
-import StatProfile from './components/StatProfile.vue'
-import SoftwareProfile from './components/SoftwareProfile.vue'
+import MainProfile from '@/views/MainProfile.vue'
+import MainHeader from '@/components/Header/MainHeader.vue'
+import StatProfile from '@/views/StatProfile.vue'
+import SoftwareProfile from '@/views/SoftwareProfile.vue'
 
 export default {
   name: 'App',
