@@ -93,6 +93,7 @@ export default {
         z-index: 0;
         filter: blur(6px);
         -webkit-filter: blur(6px);
+        box-shadow: inset 0px 0px 20px 8px $quad-color;
     }
 
     .project_content {

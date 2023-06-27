@@ -20,6 +20,14 @@
             desc="A huge WIP Project. A software which allows the viewers to earn points by watching the stream and playing minigames with others. These points can then be spend on by the streamer defined commands. The old Java Codebase is currently being redone in Node.js."
             link="https://github.com/Borsche/Loyalty_Backend"
             :tags="['Node.js', 'Typescript', 'PostgreSQL', 'API', 'Twitch', 'Java', 'SpringBoot', 'Vue.js']"
+            :image="require('../assets/projects/Loyalty.png')"
+        />
+        <ProjectTile
+            title="Twitch TTS"
+            desc="A simple tts service which runs locally on the streamers pc and reads out chat message."
+            link="https://github.com/Borsche/TTS-TwitchChat"
+            :tags="['Node.js', 'Javascript', 'API', 'Twitch',]"
+            :image="require('../assets/projects/TTS.png')"
         />
     </div>
 </template>
