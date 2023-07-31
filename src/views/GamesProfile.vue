@@ -8,6 +8,8 @@
             desc="A sidescroller game from the bullet hell genre where the player controls a ship in space and tries to dodge the enemy while destroying them to get to the final boss of each level."
             :tags="['Unity', '2D', 'Self Made Assets']"
             :image="require('@/assets/games/SpaceBulletHell.png')"
+            link="https://play.unity.com/mg/other/webgl-builds-359423"
+            link-title="VIEW ON UNITY"
         />
     </ProjectsProfile>
 </template>
