@@ -134,15 +134,15 @@ export default {
 
         .tags {
             display: flex;
-            width: 400px;
             max-width: 100vw;
             justify-content: space-evenly;
             gap: 10px;
             flex-wrap: wrap;
             z-index: 1;
+            padding-bottom: 20px;
             
             .tag {
-                background-color: $tertiary-color;
+                background-color: $primary-color;
                 text-shadow: 2px 0 $quad-color, -2px 0 $quad-color, 0 2px $quad-color, 0 -2px $quad-color,
                 1px 1px $quad-color, -1px -1px $quad-color, 1px -1px $quad-color, -1px 1px $quad-color;
                 box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
