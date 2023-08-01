@@ -51,7 +51,8 @@ export default {
 
 <style lang="scss">
 .project {
-    height: 300px;
+    max-height: 300px;
+    min-height: 200px;
     width: 400px;
     max-width: 100vw;
     border-radius: 10px;
@@ -60,6 +61,7 @@ export default {
     justify-content: flex-end;
     overflow:hidden;
     position: relative;
+    margin: 10px;
 
     cursor: pointer;
 
